@@ -1,0 +1,32 @@
+SEALED ENCRYPTED BACKUP - AUTHORIZATION REQUIRED
+
+This directory contains only an encrypted archive, not its decryption key.
+Its presence in a public repository is NOT permission to decrypt, inspect,
+use, reproduce, distribute the decrypted contents, or create derivative
+works from those contents.
+
+To the extent the depositor holds the relevant rights, all rights in the
+original private material are reserved. Prior express written authorization
+from the rights holder is required for decryption and use. No license to
+that material is granted by possession or download of the encrypted file.
+
+These conditions do not restrict rights granted under pre-existing
+third-party licenses, including this repository's existing MIT license.
+They do not override applicable law or authorize penalties. This notice is
+not a technical access control or a guarantee of legal enforceability.
+
+Security and custody:
+- Encryption: GnuPG symmetric AES-256 with an integrity-protected message.
+- A randomly generated passphrase is retained locally, outside Git.
+- No passphrase or decrypted archive is intentionally published here.
+- Anyone can download and retain this public ciphertext indefinitely.
+- File permissions on the local key are not encryption or permanent backup.
+- Loss of the local key makes this copy unrecoverable.
+- Authorized custodians must arrange an independent, secure key backup.
+
+Authorized recovery, on a trusted local machine with GnuPG:
+gpg --output recovered-backup.tar.gz --decrypt drum-machine-20261105.tar.gz.gpg
+
+Enter the passphrase at GnuPG's prompt, never in a command-line argument,
+chat, Git commit, public issue, or repository file.
+Verify GnuPG reports successful integrity verification before extracting.
